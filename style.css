@@ -1,0 +1,152 @@
+/* 全局樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6e8e9; /* 淡灰藍色背景 */
+    color: #4a4e50; /* 深灰藍色字體 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 頁眉樣式 */
+.header {
+    background-color: #a8bfc9; /* 莫蘭迪藍 */
+    color: #fdfdfd; /* 白色字體 */
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #cdd7db; /* 淡灰色邊框 */
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header nav a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: #dfe5e7; /* 更淡的白藍色 */
+}
+
+/* 發文區樣式 */
+.post-section {
+    background: #fdfdfd; /* 純白 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-section textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cdd7db;
+    margin-bottom: 10px;
+    background-color: #e8ebec; /* 淡灰藍色填充 */
+    color: #4a4e50;
+}
+
+.post-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8fa7b3; /* 深莫蘭迪藍 */
+    color: #fdfdfd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.post-section button:hover {
+    background-color: #738f9a; /* 更深的莫蘭迪藍 */
+}
+
+/* 部落格容器 */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* 貼文卡片樣式 */
+.post-card {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #cdd7db;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-time {
+    color: #a0a9ac; /* 淡藍灰色 */
+    font-size: 0.9em;
+}
+
+.interaction-buttons button {
+    background: none;
+    border: none;
+    color: #8fa7b3; /* 深莫蘭迪藍 */
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.interaction-buttons button:hover {
+    color: #738f9a; /* 更深的莫蘭迪藍 */
+}
+
+/* 留言區樣式 */
+.comments-section {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e5e6;
+    background-color: #f7f9fa; /* 淡灰藍 */
+}
+
+.comments-section textarea {
+    width: 100%;
+    resize: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cdd7db;
+    margin-bottom: 5px;
+    background-color: #e8ebec; /* 淡灰藍色填充 */
+    color: #4a4e50;
+}
+
+.comments-list p {
+    padding: 5px;
+    background: #e6e8e9; /* 更淡的灰藍色 */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #4a4e50;
+}
